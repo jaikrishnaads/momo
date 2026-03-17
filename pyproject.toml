@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "momo"
+version = "1.0.0"
+description = "MOMO AI Chatbot — Terminal CLI powered by Ollama + DuckDuckGo"
+requires-python = ">=3.10"
+
+dependencies = [
+    "langchain",
+    "langchain-ollama",
+    "langchain-community",
+    "duckduckgo-search",
+]
+
+[project.scripts]
+momo = "momo.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["momo*"]
