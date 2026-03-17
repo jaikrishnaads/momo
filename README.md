@@ -21,7 +21,7 @@ ollama pull gemma2:2b
 pip install .
 ```
 
-This installs MOMO and all its dependencies automatically.
+This installs MOMO globally on your system. You can now use the `momo` command from **any folder or drive** (C:, D:, E:).
 
 ### 3. Use it
 
@@ -36,6 +36,15 @@ momo
 ```
 
 That's it! 🎉
+
+---
+
+## 💥 Recovery (Wrong Password / Self-Destruct)
+
+If you enter the wrong password, the project deletes its own source code out of security. To recover:
+1. Uninstall the broken command: `pip uninstall momo -y`
+2. Extract the original project folder again from your backup/ZIP.
+3. CD into the new folder and run `pip install .` to reinstall.
 
 ---
 
